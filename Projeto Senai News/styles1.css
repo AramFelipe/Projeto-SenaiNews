@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    width: 100vw;
+    min-height: 100vh;
+    color: black;
+    font-family: 'Oswald';
+    overflow-x: hidden !important;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(22, 22, 22, 0.2);
+}
+.topo {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.botao{
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+.botao:hover{
+    width: 65px;
+    height: 35px;
+}
+.div-botao{
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 40px;
+}
+.topo .titulo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+}
+.topo .sociais {
+    display:flex;
+    list-style: none;
+    gap: 10px;
+}
+.pagina-principal{
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    padding: 24px;
+}
+.artigos-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    row-gap: 5rem;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    margin-left: 6.5rem;
+}
+.imagens{
+    max-width: 24rem;
+    max-height: 24rem;
+    margin-bottom: 0.6rem;
+    border-radius: 0.2rem;
+}
+
+.artigos{
+    font-family: 'Poppins', sans-serif;
+    word-wrap: break-word;
+    max-width: 28rem;
+    max-height: 24rem;
+}
+.artigo-titulo:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+    cursor: pointer;
+}
+.footer,
+.push {
+  height: 80px;
+}
+footer{
+    color: white;
+    line-height: 50px;
+    padding: 0 20px;
+    background-color:rgba(53, 51, 43, 0.699);
+    text-align: right;
+}
+.footer-a{
+    color:white;
+}
+.footer-text:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+    cursor: pointer;
+}
+/*PAGINA DO LOGIN*/
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-left: -3rem;
+    background: rgba(22, 22, 22, 0.2);
+    padding: 32px;
+    border-radius: 10px;
+    align-items: center;
+}
+.login-input{
+    width: 15rem;
+    height: 1.6rem;
+    border: 1px solid rgba(2, 1, 1, 0.5); 
+    border-radius: 16px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 8px;
+    margin-top: 0.5rem;
+}
+label{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+.botao-login{
+    width: 140px;
+    height: 35px;
+    cursor: pointer;
+    border: 1px solid;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+/*PAGINA DAS MATÉRIAS*/
+.artigo-principal{
+    min-height: 100%;
+    display: flex;
+    text-align: center;
+    flex-grow: 1;
+    padding: 16px;
+}
+.container-principal{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: 'Poppins', sans-serif;
+    gap: 16px;
+}
+.paragrafo{
+    font-style: 'Roboto Condensed', sans-serif;
+}
