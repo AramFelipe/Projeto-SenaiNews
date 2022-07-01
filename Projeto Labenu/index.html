@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  padding: 0;
+  margin: 0;
+}
+
+    body {
+      position: relative;
+      background-color: #595f96;
+      margin: 0;
+    }
+main{
+  margin-bottom: 13vh;
+}
+    input {
+      width: 20%;
+      padding: 14px;
+      padding-left: 0px;
+    }
+    #retlaranja {
+      background-color: #cd4d00;
+      width: 100%;
+    }
+    h1 {
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+    }
+   .square-container {
+      display: flex;
+      justify-content: center;
+      margin-top: auto;
+      margin-left: auto;
+      margin-right: auto;
+      gap: 32px;
+      font-weight: bold;
+      padding: 25px;
+      width: 50%;
+}
+    .flex-item {
+      position: relative;
+      width: 26%;
+      min-width: 216px;
+      height: 10vw;
+      min-height: 216px;
+      overflow: hidden;
+    }
+     .flex-item-content{
+       width: 75%;
+       height: 100%;
+       font-family: sans-serif;
+	   	 color: white;
+		   font-size: 2em;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       margin: 0 auto;
+     }
+    button {
+      border: none;
+      margin: -5px;
+      background-color: #cd4d00;
+      color: white;
+      padding: 10px;
+      height: 48px;
+      width: 80px;
+      font-size: 15px;
+}
+#mobile {
+  background-color: #94c47d;
+}
+#data {
+   background-color: #e06666;
+}
+#web {
+  background-color: #6d9eeb;
+}
+     img {
+      display: block;
+      max-width: 20vw;
+      min-width: 380px;
+      height: auto;
+      margin: 10vh auto;
+}
+     .b-container {
+      position: fixed;
+      bottom: -8vh;
+      max-width: 95%;
+      margin-bottom: 20vh;
+      margin-left: 24vw;
+     }
+     p {
+     font-family: sans-serif;
+     font-size: 20px;
+     color: black;
+     }
+     .t-container {
+      position: fixed;
+      bottom: -8vh;
+      right: 0;
+      max-width: 95%;
+      margin-bottom: 20vh;
+      margin-right: 2vw;
+}
+     .turmas {
+       font-family: sans-serif;
+       font-size: 20px;
+       color: white;
+}
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      background-color: #d8d8d8;
+      height: 12vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+    .insert-email {
+      text-align: center;
+      background-color: #d8d8d8;
+}
+
+.insert-email > input {
+  min-width: 350px;
+}
+@media (max-width: 600px) {
+  .square-container {
+    flex-wrap: wrap;
+  }
+  main {
+    margin-bottom: 5vh;
+  }
+  .insert-email > input {
+    min-width: 200px;
+}
+  .square-container {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 32px;
+    font-weight: bold;
+    padding: 0px;
+    width: 100%;
+}
+  .flex-item {
+    position: relative;
+    width: 26%;
+    min-width: 158px;
+    height: 10vw;
+    min-height: 148px;
+    overflow: hidden;
+    }
+   #retlaranja {
+    background-color: #cd4d00;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    img {
+    display: block;
+    max-width: 20vw;
+    min-width: 300px;
+    height: auto;
+    margin: 6vh auto;
+}
+    input {
+      width: 20%;
+      padding: 13px;
+      padding-left: 0px;
+    }
+    button {
+      border: none;
+      margin: -5px;
+      background-color: #cd4d00;
+      color: white;
+      padding: 10px;
+      height: 44px;
+      width: 80px;
+      font-size: 15px;
+}
+    .flex-item-content {
+      font-size: 1.7em;
+    }
+     .b-container {
+      position: fixed;
+      bottom: -8vh;
+      max-width: 95%;
+      margin-bottom: 17vh;
+      margin-left: 4vw;
+      z-index: 1;
+     }
+
+</style>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<title>Projeto Seletivo Labenu</title>
+
+</head>
+<body>
+  <script> 
+  function valida(){
+var email = document.getElementById("input").value;
+var welcome = "Bem-vindo " + email;
+if (email.indexOf("@") == -1) {
+  window.alert("E-mail inválido");
+ }
+if (email.indexOf(".") == -1) {
+  window.alert("E-mail inválido"); 
+ }
+ if ((email.indexOf("@") != -1) && (email.indexOf(".") != -1)) {
+   window.alert("E-mail válido, entraremos em contato");
+   document.getElementById("bem-vindo").innerHTML = welcome;
+ } 
+}
+  </script>
+  <main>
+    <div id="retlaranja">
+      <h1>Projeto Seletivo Labenu</h1>
+    </div>
+    <div class="imagem"><img src="https://i.ibb.co/YLXFhcB/Labenu-logo-1.png" alt="Labenu-logo-1" border="0"></div>
+    <div class="square-container">
+     <div class="flex-item" id = "mobile"> 
+      <div class="flex-item-content">
+        <i>Mobile <br> Frontend</i>
+      </div>
+     </div>      
+      <div class="flex-item" id="data">
+        <div class="flex-item-content">
+          <i>Data <br> Science </i>
+        </div>
+      </div>
+      <div class="flex-item" id="web">
+        <div class="flex-item-content">
+          <i>Web Full <br> Stack</i>
+        </div>
+      </div>  
+    </div> 
+    <div class="b-container"><p id="bem-vindo"></p></div>
+    <div class="t-container">
+      <div class="turmas"><i>Turmas de 2020</i></div>
+    </div>
+   </main>
+  <footer>
+      <div class="insert-email">
+        <input type="text" id="input" placeholder="Coloque seu e-mail para contato! :)" required> 
+        <button onclick="valida()" type="submit">ENVIAR</button>
+       </div>
+    </footer>
+</body>
